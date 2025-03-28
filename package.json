@@ -1,21 +1,21 @@
 {
   "name": "vyom",
-  "version": "1.0.0",
-  "description": "An UI library named Vyom.",
-  "main": "index.js",
-  "type": "module",
+  "version": "1.0.2",
+  "description": "A UI library named Vyom.",
+  "main": "dist/index.js",
+  "files": ["dist"],
   "scripts": {
-    "test": "npm run test",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css && cp src/index.js dist/index.js"
-   
-    
+    "test": "echo \"No tests specified\" && exit 0",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css && cp src/index.js dist/index.js && cp -r src/components dist/components"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/divyarajgurjar/Vyom-UI.git"
   },
   "keywords": [
-    "vyom"
+    "vyom",
+    "UI",
+    "tailwind"
   ],
   "author": "Vyom Team",
   "license": "Apache-2.0",
